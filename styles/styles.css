@@ -1,18 +1,25 @@
 body,
 .header,
+.main,
 .header__left,
-.header__account-block {
+.header__account-block,
+.photo-block,
+.main-catalog,
+.main-catalog__nav,
+.product-tile,
+.main-catalog__new-arrivals {
     display: grid;
 }
 
 .header__right,
 .header__logo-block,
-.header__nav {
+.header__nav,
+.product-tile__price {
     display: flex;
 }
 
 body {
-    grid-template: 160px 1fr 359px / 100%;
+    grid-template: min(160px) 1fr 359px / 100%;
     font-family: 'Roboto', 'Source Sans Pro', sans-serif;
 }
 
@@ -96,6 +103,42 @@ body {
     border-radius: 0px;
 }
 
+.main {
+    grid-template: [photo-block-1-start] min(600px) [photo-block-1-end main-catalog-start] 1fr [main-catalog-end] / [main-start] 9.72% [center-content-start] 1fr [center-content-end] 9.72% [main-end];
+}
+
+.photo-block {
+    grid-area: photo-block-1-start / main-start / photo-block-1-end / main-end;
+    grid-template: 1fr 82px / [main-start] 9.72% [center-content-start] 1fr [center-content-end] 9.72% [main-end];
+    background-image: url(/pictures/product/photo-block-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.photo-block__content {
+    grid-area: 2 / center-content-start / 3 / center-content-end;
+}
+
+.main-catalog {
+    grid-area: main-catalog-start / center-content-start / main-catalog-end / center-content-end;
+    grid-template-rows: 122px 1fr 300px;
+}
+
+.main-catalog__nav {
+    grid-template-columns: repeat(6, 120px);
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.main-catalog__new-arrivals {
+    grid-template-columns: repeat(autofill, minmax(275px, 1fr));
+}
+
+.product-tile {
+    grid-template: 376px 53px / 275px;
+}
+
 .header__link {
     font-size: 1em;
     line-height: 1.25em;
@@ -107,10 +150,37 @@ body {
     line-height: 1.125em;
 }
 
+.photo-block__text {
+    font-size: 1.125em;
+    line-height: 1.75em;
+}
+
+.photo-block__link {
+    font-size: 0.9375em;
+    line-height: 1.375em;
+}
+
+.main-catalog__link {
+    font-size: 18px;
+    line-height: 27px;
+    color: #B3B3B3;
+}
+
+.photo-block__text,
+.photo-block__link {
+    color: #FFFFFF;
+}
+
 .header__journal,
 .header__login,
 .header__cart {
     border-right: 1px solid #2A2A2A;
+}
+
+
+
+p {
+    margin: 0;
 }
 
 a {
@@ -119,4 +189,8 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.main-catalog__link:active {
+    color: #1A1A1A;
 }

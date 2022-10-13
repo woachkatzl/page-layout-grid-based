@@ -11,6 +11,17 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            .header, .product-tile__sale-price, .product-tile__reg-price {
+                border: 1px solid red;
+            }
+            .main, .product-tile {
+                border: 1px solid blue;
+            }
+            .main-catalog__nav, .product-tile__price {
+                border: 1px solid green;
+            }
+        </style>
     </head>
     <body>
         <header class="header">
@@ -47,12 +58,71 @@
                         </a>
                     </div>
                     <div class="header__search-bar-container">
-                        <input class="header__search-bar" type="search" name="store-search" id="">
+                        <input class="header__search-bar" type="search" name="store-search">
                     </div>
                 </div>
             </div>
         </header>
-        <main></main>
+        <main class="main">
+            <div class="photo-block">
+                <div class="photo-block__content">
+                    <p class="photo-block__text">Analog: The Simplest Productivity System</p>
+                    <a href="link" class="photo-block__link">Shop now →</a>
+                </div>
+            </div>
+            <div class="main-catalog">
+                <nav class="main-catalog__nav">
+                    <a href="link" class="main-catalog__link">New Arrivals</a>
+                    <a href="link" class="main-catalog__link">Analog</a>
+                    <a href="link" class="main-catalog__link">Final Stock</a>
+                    <a href="link" class="main-catalog__link">Best Sellers</a>
+                    <a href="link" class="main-catalog__link">Clothing</a>
+                    <a href="link" class="main-catalog__link">Objects</a>
+                </nav>
+                <div class="main-catalog__new-arrivals">
+                    <div class="product-tile">
+                        <a href="link" class="product-tile__link">
+                            <img src="pictures/catalog/analog-starter-kit.jpg" alt="Analog starter kit" class="product-tile__img" width="275px" height="341px">
+                            <p class="product-tile__name">Analog Starter Kit <span class="product-tile__name-hl">(Walnut)</span> </p>
+                        </a>
+                        <div class="product-tile__price">
+                            <p class="product-tile__reg-price">$103.00</p>
+                            <p class="product-tile__sale-price">$89.00</p>
+                        </div>
+                    </div>
+                    <div class="product-tile">
+                        <a href="link" class="product-tile__link">
+                            <img src="pictures/catalog/analog-starter-kit.jpg" alt="Analog starter kit" class="product-tile__img" width="275px" height="341px">
+                            <p class="product-tile__name">Analog Starter Kit <span class="product-tile__name-hl">(Walnut)</span> </p>
+                        </a>
+                        <div class="product-tile__price">
+                            <p class="product-tile__reg-price">$103.00</p>
+                            <p class="product-tile__sale-price">$89.00</p>
+                        </div>
+                    </div>
+                    <div class="product-tile">
+                        <a href="link" class="product-tile__link">
+                            <img src="pictures/catalog/analog-starter-kit.jpg" alt="Analog starter kit" class="product-tile__img" width="275px" height="341px">
+                            <p class="product-tile__name">Analog Starter Kit <span class="product-tile__name-hl">(Walnut)</span> </p>
+                        </a>
+                        <div class="product-tile__price">
+                            <p class="product-tile__reg-price">$103.00</p>
+                            <p class="product-tile__sale-price">$89.00</p>
+                        </div>
+                    </div>
+                    <div class="product-tile">
+                        <a href="link" class="product-tile__link">
+                            <img src="pictures/catalog/analog-starter-kit.jpg" alt="Analog starter kit" class="product-tile__img" width="275px" height="341px">
+                            <p class="product-tile__name">Analog Starter Kit <span class="product-tile__name-hl">(Walnut)</span> </p>
+                        </a>
+                        <div class="product-tile__price">
+                            <p class="product-tile__reg-price">$103.00</p>
+                            <p class="product-tile__sale-price">$89.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
         <footer></footer>
     </body>
 </html>
