@@ -12,15 +12,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
         <style>
-            .header, .product-tile__sale-price, .product-tile__reg-price {
+            /* .header {
                 border: 1px solid red;
             }
-            .main, .product-tile {
+            .main {
                 border: 1px solid blue;
             }
-            .main-catalog__nav, .product-tile__price {
+            .main-catalog {
                 border: 1px solid green;
-            }
+            } */
         </style>
     </head>
     <body>
@@ -64,9 +64,9 @@
             </div>
         </header>
         <main class="main">
-            <div class="photo-block">
-                <div class="photo-block__content">
-                    <p class="photo-block__text">Analog: The Simplest Productivity System</p>
+            <div class="photo-block photo-block--1">
+                <div class="photo-block--1__content">
+                    <p class="photo-block__text photo-block__text--1">Analog: The Simplest Productivity System</p>
                     <a href="link" class="photo-block__link">Shop now →</a>
                 </div>
             </div>
@@ -92,36 +92,77 @@
                     </div>
                     <div class="product-tile">
                         <a href="link" class="product-tile__link">
-                            <img src="pictures/catalog/analog-starter-kit.jpg" alt="Analog starter kit" class="product-tile__img" width="275px" height="341px">
-                            <p class="product-tile__name">Analog Starter Kit <span class="product-tile__name-hl">(Walnut)</span> </p>
+                            <img src="pictures/catalog/analog-cards.jpg" alt="Analog Cards" class="product-tile__img" width="275px" height="341px">
+                            <p class="product-tile__name">Analog Cards <span class="product-tile__name-hl">(3-Pack)</span> </p>
                         </a>
                         <div class="product-tile__price">
-                            <p class="product-tile__reg-price">$103.00</p>
-                            <p class="product-tile__sale-price">$89.00</p>
+                            <p class="product-tile__single-price">$39.00</p>
                         </div>
                     </div>
                     <div class="product-tile">
                         <a href="link" class="product-tile__link">
-                            <img src="pictures/catalog/analog-starter-kit.jpg" alt="Analog starter kit" class="product-tile__img" width="275px" height="341px">
-                            <p class="product-tile__name">Analog Starter Kit <span class="product-tile__name-hl">(Walnut)</span> </p>
+                            <img src="pictures/catalog/analog-complete-set.jpg" alt="Analog Complete Set" class="product-tile__img" width="275px" height="341px">
+                            <p class="product-tile__name">The Analog Complete Set</p>
                         </a>
                         <div class="product-tile__price">
-                            <p class="product-tile__reg-price">$103.00</p>
-                            <p class="product-tile__sale-price">$89.00</p>
+                            <p class="product-tile__reg-price">$137.00</p>
+                            <p class="product-tile__sale-price">$130.00</p>
+                        </div>
+                    </div>
+                    <div class="product-tile product-tile--scarce">
+                        <a href="link" class="product-tile__link">
+                            <img src="pictures/catalog/pen-tray.jpg" alt="Pen Tray" class="product-tile__img" width="275px" height="341px">
+                            <p class="product-tile__name">Pen Tray <span class="product-tile__name-hl">(Walnut)</span> </p>
+                        </a>
+                        <div class="product-tile__price">
+                            <p class="product-tile__single-price">$38.00</p>
+                        </div>
+                        <div class="product-tile__warn">
+                            <p class="product-tile__warn-text">Almost Sold Out</p>
                         </div>
                     </div>
                     <div class="product-tile">
                         <a href="link" class="product-tile__link">
-                            <img src="pictures/catalog/analog-starter-kit.jpg" alt="Analog starter kit" class="product-tile__img" width="275px" height="341px">
-                            <p class="product-tile__name">Analog Starter Kit <span class="product-tile__name-hl">(Walnut)</span> </p>
+                            <img src="pictures/catalog/pen-tray-maple.jpg" alt="Pen Tray" class="product-tile__img" width="275px" height="341px">
+                            <p class="product-tile__name">Pen Tray <span class="product-tile__name-hl">(Maple)</span> </p>
                         </a>
                         <div class="product-tile__price">
-                            <p class="product-tile__reg-price">$103.00</p>
-                            <p class="product-tile__sale-price">$89.00</p>
+                            <p class="product-tile__single-price">$38.00</p>
+                        </div>
+                    </div>
+                    <div class="product-tile">
+                        <a href="link" class="product-tile__link">
+                            <img src="pictures/catalog/hmm-ball-pen.jpg" alt="HMM Ballpoint Pen" class="product-tile__img" width="275px" height="341px">
+                            <p class="product-tile__name">HMM Ballpoint Pen <span class="product-tile__name-hl">(Black)</span> </p>
+                        </a>
+                        <div class="product-tile__price">
+                            <p class="product-tile__single-price">$35.00</p>
+                        </div>
+                    </div>
+                    <div class="product-tile">
+                        <a href="link" class="product-tile__link">
+                            <img src="pictures/catalog/shirt-mist.jpg" alt="T-shit, Mist" class="product-tile__img" width="275px" height="341px">
+                            <p class="product-tile__name">Mist <span class="product-tile__name-hl">(Black Triblend)</span> </p>
+                        </a>
+                        <div class="product-tile__price">
+                            <p class="product-tile__single-price">$36.00</p>
+                        </div>
+                    </div>
+                    <div class="product-tile">
+                        <a href="link" class="product-tile__link">
+                            <img src="pictures/catalog/shirt-circ.jpg" alt="T-shirt, Circular" class="product-tile__img" width="275px" height="341px">
+                            <p class="product-tile__name">Circular <span class="product-tile__name-hl">(Charcoal)</span> </p>
+                        </a>
+                        <div class="product-tile__price">
+                            <p class="product-tile__single-price">$36.00</p>
                         </div>
                     </div>
                 </div>
+                <div class="main-catalog__btn-section">
+                    <button class="main-catalog__btn" type="button">Shop New Arrivals →</button>
+                </div>
             </div>
+            <div class="photo-block photo-block--2"></div>
         </main>
         <footer></footer>
     </body>
