@@ -11,17 +11,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
-        <style>
-            .header {
-                border: 1px solid red;
-            }
-            .main {
-                border: 1px solid blue;
-            }
-            .main-catalog, .footer__content {
-                border: 1px solid green;
-            }
-        </style>
     </head>
     <body>
         <header class="header">
@@ -200,13 +189,29 @@
                 <a href="link" class="footer__link">Contact Us</a>
                 <a href="link" class="footer__link">Reviews</a>
                 <div class="footer__copyright">
-                    <p>© Ugmonk 2021</p>
-                    <p>All images and content may not be used without permission</p>
+                    <p class="footer__text-1">© Ugmonk 2021</p>
+                    <p class="footer__text-2">All images and content may not be <br> used without permission</p>
                 </div>
                 <svg class="footer__logo" width="55px" height="88px">
                     <use xlink:href="images/sprite.svg#logo"></use>
                 </svg>
-                <div class="footer__social"></div>
+                <div class="footer__social">
+                    <a class="footer__social-link" href="link">
+                        <svg width="30px" height="30px">
+                            <use xlink:href="images/sprite.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <a class="footer__social-link" href="link">
+                        <svg class="footer__tw" width="30px" height="30px">
+                            <use xlink:href="images/sprite.svg#twitter"></use>
+                        </svg>
+                    </a>
+                    <a class="footer__social-link" href="link">
+                        <svg width="30px" height="30px">
+                            <use xlink:href="images/sprite.svg#facebook"></use>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </footer>
     </body>
