@@ -40,7 +40,7 @@ body,
 }
 
 body {
-    grid-template: min(160px) 1fr 359px / 100%;
+    grid-template: minmax(min-content, max-content) 1fr 359px / 100%;
     font-family: 'Roboto', 'Source Sans Pro', sans-serif;
 }
 
@@ -75,9 +75,12 @@ body {
     justify-content: center;
 }
 
-.header,
+.header {
+    grid-template-columns: repeat(auto-fit, minmax(330px, 720px));
+}
+
 .header__left {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
 }
 
 .header__nav,
@@ -154,7 +157,7 @@ body {
 }
 
 .main-catalog__new-arrivals {
-    grid-template-columns: repeat(4, 275px);
+    grid-template-columns: repeat(auto-fit, 275px);
 }
 
 .product-tile {
@@ -289,6 +292,10 @@ p {
 
 .footer__social-link {
     margin-left: 16px;
+}
+
+.header {
+    padding-bottom: 35px;
 }
 
 .header__right {
