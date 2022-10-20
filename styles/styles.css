@@ -76,7 +76,7 @@ body {
 }
 
 .header {
-    grid-template-columns: repeat(auto-fit, minmax(330px, 720px));
+    grid-template-columns: 25% 25% 50%;
 }
 
 .header__left {
@@ -140,6 +140,7 @@ body {
     grid-row: photo-block-1-start / photo-block-1-end;
     grid-template-rows: 1fr 82px;
     background-image: url('../pictures/product/photo-block-1.jpg');
+    max-width: 100%;
 }
 
 .photo-block__content--1 {
@@ -168,6 +169,7 @@ body {
     grid-row: photo-block-2-start / photo-block-2-end;
     grid-template-rows: 200px 1fr 200px;
     background-image: url('../pictures/product/photo-block-2.jpg');
+    max-width: 100%;
 }
 
 .photo-block__content--2 {
@@ -213,6 +215,10 @@ body {
 
 .contact-form__form {
     align-self: center;
+}
+
+.header__nav {
+    min-width: max-content;
 }
 
 .contact-form__email-field {
